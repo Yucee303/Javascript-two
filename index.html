@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 2</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- TEMPERATURE CONVERSION PROGRAM-->
+   <div class="fifthcont">
+    <form>
+      <h1>Temperature conversion</h1>
+      <input type="number" id="texttBox" value="0"> <br>
+
+      <input type="radio" id="toFahrenheit" name="unit">
+      <label for="toFahrenheit">Celsius ➡️ Fahrenheit</label> <br>
+
+      <input type="radio" id="toCelsius" name="unit">
+      <label for="toCelsius">Fahrenheit ➡️ Celsius</label> <br>
+
+      <button type="button" id="sub" onclick="convert()"> submit</button>
+      <p id="resultt"></p>
+    </form>
+  </div>
+
+
+  <!--ROLLING OF FAIR DICE-->
+  <div class="sixthcont">
+    <h1>Dice Roller</h1>
+    <label> # of dice</label> <br>
+    <input type="number" id="numOfDice" value="1" min="1"> <br> <br>
+    <button class="buttn" onclick="rollDice()">Roll Dice</button> <br><br>
+    <div id="diceResult"></div>
+    <div id="diceImages"></div>
+
+  </div>
+
+  <div class="seventhcont">
+    <button onclick="startTimer()" class="seven">START</button>
+    <button onclick="clearTimer()" class="seven">CLEAR</button>
+  </div>
+
+  <div class="eightcont">
+    <div id="clock-container">
+      <div id="clock">00:00:00</div>
+    </div> 
+  </div>
+
+  <div class="ninthcont">
+    <h1 id="myH5">STOPWATCH</h1>
+    <div id="container">
+      <div id="display">
+        00:00:00:00
+      </div>
+      <div id="controls">
+        <button id="startBtn" onclick="start">START</button>
+        <button id="stopbtn" onclick="stop()">STOP</button>
+        <button id="resetbtn" onclick="reset()">RESET</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  <div class="eleventhcont">
+    
+    <!-- <div id="calculator">
+      <input id="display" readonly>
+      <div id="keys">
+        <button class="calc" onclick="appendToDisplay('+')">7</button>
+        <button class="calc" onclick="appendToDisplay('7')">8</button>
+        <button class="calc" onclick="appendToDisplay('8')">9</button>
+        <button class="cal" onclick="appendToDisplay('9')">+</button> 
+        <button class="cal" onclick="appendToDisplay('-')">-</button>
+        <button class="calc" onclick="appendToDisplay('4')">4</button> 
+        <button class="calc" onclick="appendToDisplay('5')">5</button>
+        <button class="calc" onclick="appendToDisplay('6')">6</button>
+        <button class="cal" onclick="appendToDisplay('*')">*</button>
+        <button class="cal" onclick="appendToDisplay('1')">/</button>
+        <button class="calc" onclick="appendToDisplay('2')">1</button>
+        <button class="calc" onclick="appendToDisplay('3')">2</button>
+        <button class="calc" onclick="appendToDisplay('/')">3</button>
+        <button class="cal" onclick="appendToDisplay('0')">+/-</button>
+        <button class="cal" onclick="appendToDisplay('+')">C</button>
+        <button class="calc" onclick="appendToDisplay('+')">%</button>
+        <button class="calc" onclick="appendToDisplay('+')">0</button>
+        <button class="calc" onclick="appendToDisplay('+')">.</button>
+        <button class="cal" onclick="appendToDisplay('+')">=</button>
+        
+
+      </div>
+    </div> -->
+
+  </div>
+  
+  
+  
+  
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+  <div class="thirtenth">
+    <form class="weatherform">
+      <input type="text" class="cityInput" placeholder="Enter City">
+      <button type="submit">Get Weather</button>
+    </form>
+    <div class="card"></div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
